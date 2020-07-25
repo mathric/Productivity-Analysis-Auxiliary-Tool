@@ -1,0 +1,473 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3A80C44A731895DA4ED9DACD /* Pods_Productivity_Analytics_Implementation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 426FC9BAE925D1D6AFD79808 /* Pods_Productivity_Analytics_Implementation.framework */; };
+		420C1EC224C595AB00217570 /* AppConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420C1EC124C595AB00217570 /* AppConstant.swift */; };
+		420C1EC624C8332000217570 /* ChartData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420C1EC524C8332000217570 /* ChartData.swift */; };
+		426DC98B24B076050055E0F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426DC98A24B076050055E0F5 /* AppDelegate.swift */; };
+		426DC98D24B076050055E0F5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426DC98C24B076050055E0F5 /* ViewController.swift */; };
+		426DC99224B076060055E0F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 426DC99124B076060055E0F5 /* Assets.xcassets */; };
+		426DC99524B076060055E0F5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 426DC99324B076060055E0F5 /* Main.storyboard */; };
+		42C8341624B0B2850069F931 /* AppleScript.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C8341524B0B2850069F931 /* AppleScript.swift */; };
+		42C8341B24B0D1F00069F931 /* DetectCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C8341A24B0D1F00069F931 /* DetectCore.swift */; };
+		42C8341F24B1DB600069F931 /* CustomDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C8341E24B1DB600069F931 /* CustomDate.swift */; };
+		42C8342124B1EB840069F931 /* ActivityTableViewFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C8341C24B1CF3B0069F931 /* ActivityTableViewFilter.swift */; };
+		42C8342324B20ED80069F931 /* ActivityModelFetch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C8342224B20ED80069F931 /* ActivityModelFetch.swift */; };
+		42C8342524B22D490069F931 /* ActivityModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C8342424B22D490069F931 /* ActivityModel.swift */; };
+		42C8342E24B232970069F931 /* Productivity_Analytics_Implementation.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 42C8342C24B232970069F931 /* Productivity_Analytics_Implementation.xcdatamodeld */; };
+		42C8343224C19FEC0069F931 /* CustomTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C8343124C19FEC0069F931 /* CustomTimer.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		420C1EC124C595AB00217570 /* AppConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstant.swift; sourceTree = "<group>"; };
+		420C1EC524C8332000217570 /* ChartData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartData.swift; sourceTree = "<group>"; };
+		426DC98724B076050055E0F5 /* Productivity Analytics Implementation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Productivity Analytics Implementation.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		426DC98A24B076050055E0F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		426DC98C24B076050055E0F5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		426DC99124B076060055E0F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		426DC99424B076060055E0F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		426DC99624B076060055E0F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		426DC99724B076060055E0F5 /* Productivity_Analytics_Implementation.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Productivity_Analytics_Implementation.entitlements; sourceTree = "<group>"; };
+		426FC9BAE925D1D6AFD79808 /* Pods_Productivity_Analytics_Implementation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Productivity_Analytics_Implementation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		42C8341324B0A1DD0069F931 /* Productivity Analytics ImplementationDebug.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Productivity Analytics ImplementationDebug.entitlements"; sourceTree = "<group>"; };
+		42C8341524B0B2850069F931 /* AppleScript.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleScript.swift; sourceTree = "<group>"; };
+		42C8341A24B0D1F00069F931 /* DetectCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetectCore.swift; sourceTree = "<group>"; };
+		42C8341C24B1CF3B0069F931 /* ActivityTableViewFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityTableViewFilter.swift; sourceTree = "<group>"; };
+		42C8341E24B1DB600069F931 /* CustomDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDate.swift; sourceTree = "<group>"; };
+		42C8342224B20ED80069F931 /* ActivityModelFetch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityModelFetch.swift; sourceTree = "<group>"; };
+		42C8342424B22D490069F931 /* ActivityModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityModel.swift; sourceTree = "<group>"; };
+		42C8342D24B232970069F931 /* Productivity_Analytics_Implementation.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Productivity_Analytics_Implementation.xcdatamodel; sourceTree = "<group>"; };
+		42C8343124C19FEC0069F931 /* CustomTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTimer.swift; sourceTree = "<group>"; };
+		6E639DB2E4D324E22A36C680 /* Pods-Productivity Analytics Implementation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Productivity Analytics Implementation.debug.xcconfig"; path = "Target Support Files/Pods-Productivity Analytics Implementation/Pods-Productivity Analytics Implementation.debug.xcconfig"; sourceTree = "<group>"; };
+		D170769ED295B84752D3FB29 /* Pods-Productivity Analytics Implementation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Productivity Analytics Implementation.release.xcconfig"; path = "Target Support Files/Pods-Productivity Analytics Implementation/Pods-Productivity Analytics Implementation.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		426DC98424B076050055E0F5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A80C44A731895DA4ED9DACD /* Pods_Productivity_Analytics_Implementation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		217D99791042AC74D1A7BEA2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				426FC9BAE925D1D6AFD79808 /* Pods_Productivity_Analytics_Implementation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3CF73474587489051ECA9A9C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6E639DB2E4D324E22A36C680 /* Pods-Productivity Analytics Implementation.debug.xcconfig */,
+				D170769ED295B84752D3FB29 /* Pods-Productivity Analytics Implementation.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		426DC97E24B076050055E0F5 = {
+			isa = PBXGroup;
+			children = (
+				426DC98924B076050055E0F5 /* Productivity Analytics Implementation */,
+				426DC98824B076050055E0F5 /* Products */,
+				3CF73474587489051ECA9A9C /* Pods */,
+				217D99791042AC74D1A7BEA2 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		426DC98824B076050055E0F5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				426DC98724B076050055E0F5 /* Productivity Analytics Implementation.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		426DC98924B076050055E0F5 /* Productivity Analytics Implementation */ = {
+			isa = PBXGroup;
+			children = (
+				42C8342024B1E94F0069F931 /* Model */,
+				42C8341424B0B26A0069F931 /* Data */,
+				42C8341324B0A1DD0069F931 /* Productivity Analytics ImplementationDebug.entitlements */,
+				426DC98A24B076050055E0F5 /* AppDelegate.swift */,
+				426DC98C24B076050055E0F5 /* ViewController.swift */,
+				42C8343124C19FEC0069F931 /* CustomTimer.swift */,
+				42C8341A24B0D1F00069F931 /* DetectCore.swift */,
+				426DC99124B076060055E0F5 /* Assets.xcassets */,
+				426DC99324B076060055E0F5 /* Main.storyboard */,
+				426DC99624B076060055E0F5 /* Info.plist */,
+				426DC99724B076060055E0F5 /* Productivity_Analytics_Implementation.entitlements */,
+				42C8342C24B232970069F931 /* Productivity_Analytics_Implementation.xcdatamodeld */,
+			);
+			path = "Productivity Analytics Implementation";
+			sourceTree = "<group>";
+		};
+		42C8341424B0B26A0069F931 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				42C8341524B0B2850069F931 /* AppleScript.swift */,
+				420C1EC124C595AB00217570 /* AppConstant.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		42C8342024B1E94F0069F931 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				42C8341E24B1DB600069F931 /* CustomDate.swift */,
+				42C8341C24B1CF3B0069F931 /* ActivityTableViewFilter.swift */,
+				42C8342224B20ED80069F931 /* ActivityModelFetch.swift */,
+				42C8342424B22D490069F931 /* ActivityModel.swift */,
+				420C1EC524C8332000217570 /* ChartData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		426DC98624B076050055E0F5 /* Productivity Analytics Implementation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 426DC99A24B076060055E0F5 /* Build configuration list for PBXNativeTarget "Productivity Analytics Implementation" */;
+			buildPhases = (
+				15F7F73777F8CB32769CBD30 /* [CP] Check Pods Manifest.lock */,
+				426DC98324B076050055E0F5 /* Sources */,
+				426DC98424B076050055E0F5 /* Frameworks */,
+				426DC98524B076050055E0F5 /* Resources */,
+				80EC10B8D04C823C24180CA1 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Productivity Analytics Implementation";
+			productName = "Productivity Analytics Implementation";
+			productReference = 426DC98724B076050055E0F5 /* Productivity Analytics Implementation.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		426DC97F24B076050055E0F5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = "KUAN-YU CHEN";
+				TargetAttributes = {
+					426DC98624B076050055E0F5 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+				};
+			};
+			buildConfigurationList = 426DC98224B076050055E0F5 /* Build configuration list for PBXProject "Productivity Analytics Implementation" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 426DC97E24B076050055E0F5;
+			productRefGroup = 426DC98824B076050055E0F5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				426DC98624B076050055E0F5 /* Productivity Analytics Implementation */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		426DC98524B076050055E0F5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				426DC99224B076060055E0F5 /* Assets.xcassets in Resources */,
+				426DC99524B076060055E0F5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		15F7F73777F8CB32769CBD30 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Productivity Analytics Implementation-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		80EC10B8D04C823C24180CA1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Productivity Analytics Implementation/Pods-Productivity Analytics Implementation-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Productivity Analytics Implementation/Pods-Productivity Analytics Implementation-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Productivity Analytics Implementation/Pods-Productivity Analytics Implementation-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		426DC98324B076050055E0F5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42C8342E24B232970069F931 /* Productivity_Analytics_Implementation.xcdatamodeld in Sources */,
+				420C1EC224C595AB00217570 /* AppConstant.swift in Sources */,
+				426DC98D24B076050055E0F5 /* ViewController.swift in Sources */,
+				42C8341F24B1DB600069F931 /* CustomDate.swift in Sources */,
+				42C8343224C19FEC0069F931 /* CustomTimer.swift in Sources */,
+				42C8342524B22D490069F931 /* ActivityModel.swift in Sources */,
+				42C8342324B20ED80069F931 /* ActivityModelFetch.swift in Sources */,
+				42C8341B24B0D1F00069F931 /* DetectCore.swift in Sources */,
+				42C8342124B1EB840069F931 /* ActivityTableViewFilter.swift in Sources */,
+				426DC98B24B076050055E0F5 /* AppDelegate.swift in Sources */,
+				420C1EC624C8332000217570 /* ChartData.swift in Sources */,
+				42C8341624B0B2850069F931 /* AppleScript.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		426DC99324B076060055E0F5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				426DC99424B076060055E0F5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		426DC99824B076060055E0F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		426DC99924B076060055E0F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		426DC99B24B076060055E0F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E639DB2E4D324E22A36C680 /* Pods-Productivity Analytics Implementation.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Productivity Analytics Implementation/Productivity Analytics ImplementationDebug.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = XL44MM8GW7;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = "Productivity Analytics Implementation/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.turtorial.Productivity-Analytics-Implementation";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		426DC99C24B076060055E0F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D170769ED295B84752D3FB29 /* Pods-Productivity Analytics Implementation.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Productivity Analytics Implementation/Productivity_Analytics_Implementation.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = XL44MM8GW7;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = "Productivity Analytics Implementation/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.turtorial.Productivity-Analytics-Implementation";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		426DC98224B076050055E0F5 /* Build configuration list for PBXProject "Productivity Analytics Implementation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				426DC99824B076060055E0F5 /* Debug */,
+				426DC99924B076060055E0F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		426DC99A24B076060055E0F5 /* Build configuration list for PBXNativeTarget "Productivity Analytics Implementation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				426DC99B24B076060055E0F5 /* Debug */,
+				426DC99C24B076060055E0F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		42C8342C24B232970069F931 /* Productivity_Analytics_Implementation.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				42C8342D24B232970069F931 /* Productivity_Analytics_Implementation.xcdatamodel */,
+			);
+			currentVersion = 42C8342D24B232970069F931 /* Productivity_Analytics_Implementation.xcdatamodel */;
+			path = Productivity_Analytics_Implementation.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 426DC97F24B076050055E0F5 /* Project object */;
+}

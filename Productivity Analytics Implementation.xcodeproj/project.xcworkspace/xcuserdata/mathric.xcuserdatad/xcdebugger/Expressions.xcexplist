@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "CustomTimer.updateActivityData():CustomTimer.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "applicationNameToIndexDict.count">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ViewController.updateRowByIndex(notification:):ViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "rowIndexes.first!">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ViewController.tableView(_:viewFor:row:):ViewController.swift">
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
