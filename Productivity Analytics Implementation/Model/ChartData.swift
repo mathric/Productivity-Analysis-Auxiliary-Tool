@@ -78,9 +78,9 @@ class ChartData {
                 if !daySet.contains(currentElementDate) {
                     daySet.insert(currentElementDate)
                 }
-                if Int(calendar.component(.hour, from: data.endTime!)) > Int(calendar.component(.hour, from: data.startTime!)) {
-                    for i in Int(calendar.component(.hour, from: data.startTime!))+1...Int(calendar.component(.hour, from: data.endTime!))-1 {
-                        output[i] += 1
+                if Int(calendar.component(.hour, from: data.endTime!)) > Int(calendar.component(.hour, from: data.startTime!))  {
+                    for i in Int(calendar.component(.hour, from: data.startTime!))+1..<Int(calendar.component(.hour, from: data.endTime!)) {
+                        output[i] += 60
                     }
                     output[Int(calendar.component(.hour, from: data.startTime!))] += Double(60 - calendar.component(.minute, from: data.startTime!))
                     output[Int(calendar.component(.hour, from: data.startTime!))] += Double(calendar.component(.minute, from: data.endTime!))
@@ -99,7 +99,7 @@ class ChartData {
     
     //compare today's data to input coreData
     static func getProductivityData(todayData: [CoreDataActivity], compareData: [CoreDataActivity]) -> [Double] {
-        var output = [Double](repeating: -1, count: 24)
+        var output = [Double](repeating: Double.leastNormalMagnitude, count: 24)
         var todayClickData = [Double](repeating: 0, count: 24)
         var compClickData = [Double](repeating: 0, count: 24)
         var startTime:Int
@@ -134,16 +134,13 @@ class ChartData {
             compClickData[i] /= Double(daySet.count)
         }
         
-        /* three cases:
+        /* two cases:
         1.the today's data after current time : not display
-        2.today's data is zero : zero
-        3. history data is zero: -2(special mark)  */
-        for i in 0..<Int(Calendar.current.component(.hour, from: Date())) {
-            if todayClickData[i] == 0 {
-                output[i] = 0
-            }
-            else if compClickData[i] == 0{
-                output[i] = -2
+        2. history data is zero: -2(special mark)  */
+        for i in 0...Int(Calendar.current.component(.hour, from: Date())) {
+  
+            if compClickData[i] == 0{
+                output[i] = Double.leastNormalMagnitude
             }
             else {
                 output[i] = (todayClickData[i] - compClickData[i])/compClickData[i]

@@ -257,11 +257,10 @@ class ViewController: NSViewController, NSTableViewDelegate, NSTableViewDataSour
         }
         
         for i in 0 ..< productivityData.count {
-            if productivityData[i] == -1 {
-                break;
+            if productivityData[i] != Double.leastNormalMagnitude {
+                let dataEntry = ChartDataEntry(x: Double(i), y:productivityData[i])
+                visibleDataEntries.append(dataEntry)
             }
-            let dataEntry = ChartDataEntry(x: Double(i), y:productivityData[i])
-            visibleDataEntries.append(dataEntry)
         }
         
         let invisibleChartDataSet = LineChartDataSet(entries: invisibleDataEntries)
