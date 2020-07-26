@@ -45,7 +45,6 @@ class CustomTimer {
                     
                     NotificationCenter.default.post(name: NSNotification.Name(rawValue: "UpdateRowData"), object: nil, userInfo: indexSetDict)
                 }
-                //TODO: index not found -> insert new row
                 else {
                     let index = applicationNameToIndexDict.count
                     let indexSetDict = ["index": IndexSet(integer: index)]

@@ -83,7 +83,7 @@ class ChartData {
                         output[i] += 60
                     }
                     output[Int(calendar.component(.hour, from: data.startTime!))] += Double(60 - calendar.component(.minute, from: data.startTime!))
-                    output[Int(calendar.component(.hour, from: data.startTime!))] += Double(calendar.component(.minute, from: data.endTime!))
+                    output[Int(calendar.component(.hour, from: data.endTime!))] += Double(calendar.component(.minute, from: data.endTime!))
                 }
                 else {
                     output[Int(calendar.component(.hour, from: data.startTime!))] += CustomDate.dateDiff(start: data.startTime!, end: data.endTime!)/60
